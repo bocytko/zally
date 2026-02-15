@@ -62,8 +62,8 @@ describe('Violations component', () => {
     const counts = component.find('.violations-heading__count');
 
     expect(counts).toHaveLength(2);
-    expect(counts.at(0).text()).toContain('MUST: 2');
-    expect(counts.at(1).text()).toContain('SHOULD: 3');
+    expect(counts.at(0).text()).toContain('MUST:2');
+    expect(counts.at(1).text()).toContain('SHOULD:3');
     expect(counts.at(0).find('RuleType')).toHaveLength(1);
     expect(counts.at(1).find('RuleType')).toHaveLength(1);
   });
